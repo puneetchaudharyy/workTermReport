@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Intro = () => {
+const Goals = () => {
   return (
     <div>
       
@@ -8,4 +8,4 @@ const Intro = () => {
   )
 }
 
-export default Intro
+export default Goals

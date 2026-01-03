@@ -1,0 +1,74 @@
+.site-header {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 2.5rem 1rem;
+  background: linear-gradient(90deg, #36413E, #5D5E60, #8D8D92);
+  color: white;
+  text-align: center;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.badge {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.main-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .main-title {
+    font-size: 3rem;
+  }
+}
+
+.position {
+  font-size: 1.125rem;
+  margin: 0 0 0.25rem 0;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .position {
+    font-size: 1.25rem;
+  }
+}
+
+.dates {
+  font-size: 0.875rem;
+  margin: 0 0 1rem 0;
+}
+
+@media (min-width: 768px) {
+  .dates {
+    font-size: 1rem;
+  }
+}
+
+.tagline {
+  font-size: 0.875rem;
+  max-width: 512px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .tagline {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,128 @@
+:root {
+  --employer-card-bg: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  --employer-muted: #9aa0b4;
+  --employer-text: rgba(255,255,255,0.92);
+  --accent-start: #4f46e5;
+  --accent-end: #3b82f6;
+}
+
+.employer {
+  position: relative;
+  max-width: 1100px;
+  margin: 2.5rem auto;
+  padding: 1.5rem 2rem 1.5rem 3rem; /* room for left accent */
+  border-radius: 12px;
+  background: var(--employer-card-bg);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.55);
+  overflow: hidden;
+}
+
+/* rounded accent stripe outside the card */
+.employer::before {
+  content: '';
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  bottom: 12px;
+  width: 8px;
+  background: linear-gradient(180deg, var(--accent-start), var(--accent-end));
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(79,70,229,0.12);
+}
+
+.employer-header {
+  margin-bottom: 0.5rem;
+}
+
+/* Primary stacked title in the left-middle column */
+.employer-title-stacked {
+  font-size: clamp(2.25rem, 5vw, 3.6rem);
+  line-height: 0.95;
+  margin: 0;
+  font-weight: 900;
+  color: var(--employer-text);
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-shadow: 0 6px 0 rgba(0,0,0,0.55);
+}
+
+.employer-body {
+  display: grid;
+  grid-template-columns: 100px 220px minmax(420px, 1fr);
+  gap: 2rem;
+  align-items: center;
+}
+
+.employer-sidebar {
+  font-size: 0.78rem;
+  color: var(--employer-muted);
+  line-height: 1.6;
+  padding-right: 0.75rem;
+  border-right: 1px solid rgba(255,255,255,0.02);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.employer-content {
+  color: var(--employer-text);
+  max-width: 720px;
+  margin-right: auto;
+  text-align: center;
+}
+
+.employer-paragraph {
+  margin: 0 0 1rem 0;
+  line-height: 1.8;
+  font-size: 0.98rem;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .employer-body {
+    grid-template-columns: 80px 180px 1fr;
+    gap: 1rem;
+  }
+  .employer-title-stacked {
+    font-size: clamp(1.8rem, 6vw, 2.6rem);
+  }
+}
+
+@media (max-width: 720px) {
+  .employer {
+    padding: 1rem;
+  }
+  .employer-body {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    align-items: start;
+  }
+  .employer-sidebar {
+    justify-content: flex-start;
+    text-align: left;
+    border-right: none;
+    padding-right: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(255,255,255,0.03);
+  }
+  .employer-title-col {
+    order: -1;
+    text-align: left;
+  }
+  .employer-title-stacked {
+    font-size: clamp(1.4rem, 6vw, 2rem);
+    text-align: left;
+  }
+  .employer-content {
+    text-align: left;
+    margin: 0;
+  }
+}

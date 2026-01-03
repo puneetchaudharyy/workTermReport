@@ -1,0 +1,54 @@
+/* Color tokens — HEX and HSL variants + gradients
+   Saved to: src/color_palette.css
+   Import this file once in the app entry (src/main.jsx) to make the variables available globally.
+*/
+
+:root {
+  /* CSS HEX */
+  --iron-grey: #36413e;
+  --charcoal: #5d5e60;
+  --rosy-granite: #8d8d92;
+  --thistle: #beb2c8;
+  --dust-grey: #d7d6d6;
+
+  /* CSS HSL (separate token approach keeps HSL values usable without parsing) */
+  --iron-grey-h: 164 9% 23%; /* use as: color: hsl(var(--iron-grey-h)); */
+  --charcoal-h: 220 2% 37%;
+  --rosy-granite-h: 240 2% 56%;
+  --thistle-h: 273 17% 74%;
+  --dust-grey-h: 0 1% 84%;
+
+  /* Gradients */
+  --gradient-top: linear-gradient(
+    0deg,
+    var(--iron-grey),
+    var(--charcoal),
+    var(--rosy-granite),
+    var(--thistle),
+    var(--dust-grey)
+  );
+  --gradient-right: linear-gradient(
+    90deg,
+    var(--iron-grey),
+    var(--charcoal),
+    var(--rosy-granite),
+    var(--thistle),
+    var(--dust-grey)
+  );
+  --gradient-bottom: linear-gradient(
+    180deg,
+    var(--iron-grey),
+    var(--charcoal),
+    var(--rosy-granite),
+    var(--thistle),
+    var(--dust-grey)
+  );
+  --gradient-left: linear-gradient(
+    270deg,
+    var(--iron-grey),
+    var(--charcoal),
+    var(--rosy-granite),
+    var(--thistle),
+    var(--dust-grey)
+  );
+}

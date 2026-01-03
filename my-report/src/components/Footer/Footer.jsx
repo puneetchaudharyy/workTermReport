@@ -14,7 +14,7 @@ const Footer = () => {
         <p className="built-with">
           Built with React & Tailwind CSS.{" "}
           <a
-            href="https://github.com/puneetchaudharyy/coop-report"
+            href="https://github.com/puneetchaudharyy/workTermReport"
             className="github-link"
           >
             Source on GitHub
