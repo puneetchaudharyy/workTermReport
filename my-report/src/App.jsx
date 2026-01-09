@@ -5,7 +5,7 @@ import Employer from './components/Employer/Employer.jsx'
 import Goals from './components/Goals/Goals.jsx'
 import Job from './components/Job/Job.jsx'
 import Conclusions from './components/Conclusions/Conclusions.jsx'
-import Acknowledgement from './components/Acknowledgement/Acknowledgement.jsx'
+import Acknowledgement from './components/Acknowledgement/Acknowledgment.jsx'
 import Footer from './components/Footer/Footer.jsx'
 
 function App() {
@@ -15,10 +15,10 @@ function App() {
       <Header />
       <Intro />
       <Employer />
-      {/* <Goals /> */}
-      {/* <Job /> */}
-      {/* <Conclusions /> */}
-      {/* <Acknowledgement /> */}
+      <Goals />
+      <Job />
+      <Conclusions />
+      <Acknowledgement />
       <Footer />
     </div>
   )

@@ -1,0 +1,80 @@
+.footer {
+  background: var(--job-card-bg); /* Matches your glassmorphism */
+  color: var(--job-text);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  margin-top: 4rem;
+  position: relative;
+  border-radius: 12px 12px 0 0;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 -18px 44px rgba(0,0,0,0.55);
+}
+
+/* Subtle bottom accent stripe */
+.footer::after {
+  content: '';
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  right: 12px;
+  height: 6px;
+  background: linear-gradient(90deg, var(--accent-start), var(--accent-end));
+  border-radius: 6px;
+  opacity: 0.8;
+}
+
+.copyright {
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--job-text);
+  font-weight: 500;
+}
+
+.co-op-info {
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--job-muted);
+}
+
+.built-with {
+  margin: 0.5rem 0;
+  font-size: 0.875rem;
+  color: var(--job-muted);
+}
+
+.github-link {
+  color: hsl(var(--thistle-h));
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.github-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: hsl(var(--thistle-h));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.github-link:hover {
+  color: hsl(var(--rosy-granite-h));
+}
+
+.github-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    margin: 2rem 1rem 0;
+    padding: 1.75rem 1.25rem;
+  }
+}

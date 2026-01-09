@@ -1,0 +1,213 @@
+.conclusions {
+  max-width: 950px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+.content-box {
+  background: linear-gradient(145deg, hsl(var(--dust-grey-h) / 0.45), hsl(var(--thistle-h) / 0.1));
+  border: 2px solid hsl(var(--rosy-granite-h) / 0.35);
+  border-radius: 24px;
+  padding: 3.5rem 3rem;
+  box-shadow: 0 16px 64px hsl(var(--charcoal-h) / 0.18);
+}
+
+.conclusions-title {
+  font-size: clamp(2.1rem, 5vw, 2.9rem);
+  font-weight: 800;
+  color: hsl(var(--charcoal-h));
+  text-align: center;
+  margin: 0 0 3rem 0;
+  position: relative;
+}
+
+.conclusions-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, hsl(var(--thistle-h)), hsl(var(--rosy-granite-h)));
+  margin: 1rem auto 0;
+  border-radius: 2px;
+}
+
+.intro-section p {
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: hsl(var(--iron-grey-h));
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-section p:last-child {
+  margin-bottom: 0;
+}
+
+.performance-metrics, .reflection, .development-path, .supervisor-endorsement {
+  margin: 3.5rem 0;
+}
+
+.performance-metrics h2, .reflection h2, .development-path h2 {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: hsl(var(--charcoal-h));
+  margin-bottom: 1.75rem;
+  text-align: center;
+}
+
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.metric-item {
+  padding: 1.5rem;
+  background: hsl(var(--dust-grey-h) / 0.35);
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid hsl(var(--rosy-granite-h) / 0.3);
+}
+
+.metric-value {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: hsl(var(--thistle-h));
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+}
+
+.metric-item span {
+  font-size: 0.95rem;
+  color: hsl(var(--iron-grey-h));
+}
+
+.reflection p {
+  font-size: 1.1rem;
+  line-height: 1.75;
+  color: hsl(var(--iron-grey-h));
+  text-align: center;
+  margin: 0 auto;
+}
+
+.path-stages {
+  display: flex;
+  justify-content: space-between;
+  max-width: 600px;
+  margin: 2rem auto 0;
+  gap: 1rem;
+}
+
+.path-stage {
+  flex: 1;
+  text-align: center;
+  padding: 1.25rem 0.75rem;
+  position: relative;
+}
+
+.path-stage:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -0.75rem;
+  width: 24px;
+  height: 2px;
+  background: hsl(var(--rosy-granite-h) / 0.6);
+  transform: translateY(-50%);
+}
+
+.path-stage.completed {
+  background: hsl(var(--thistle-h) / 0.15);
+  border-radius: 12px;
+}
+
+.stage-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+  font-size: 1rem;
+  color: white;
+  background: hsl(var(--rosy-granite-h));
+}
+
+.path-stage.completed .stage-circle {
+  background: hsl(var(--thistle-h));
+}
+
+.path-stage div:last-child {
+  font-size: 0.95rem;
+  color: hsl(var(--iron-grey-h));
+  font-weight: 500;
+}
+
+.supervisor-endorsement {
+  background: linear-gradient(135deg, hsl(var(--thistle-h) / 0.2), hsl(var(--rosy-granite-h) / 0.15));
+  border-radius: 20px;
+  padding: 2.5rem;
+  text-align: center;
+  border: 1px solid hsl(var(--thistle-h) / 0.3);
+}
+
+.supervisor-endorsement blockquote {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: hsl(var(--iron-grey-h));
+  font-style: italic;
+  margin: 0 0 1.25rem 0;
+  position: relative;
+}
+
+.supervisor-endorsement blockquote::before {
+  content: '"';
+  font-size: 3.5rem;
+  color: hsl(var(--thistle-h) / 0.4);
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quote-attribution {
+  font-size: 0.95rem;
+  color: hsl(var(--rosy-granite-h));
+  font-weight: 600;
+  padding-top: 1rem;
+  border-top: 1px solid hsl(var(--dust-grey-h) / 0.4);
+}
+
+.final-takeaway {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: hsl(var(--rosy-granite-h) / 0.12);
+  border-radius: 16px;
+  text-align: center;
+}
+
+.final-takeaway p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: hsl(var(--charcoal-h));
+  font-weight: 500;
+  margin: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .path-stages {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .path-stage:not(:last-child)::after {
+    display: none;
+  }
+}

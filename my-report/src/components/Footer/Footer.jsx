@@ -1,4 +1,5 @@
 import React from 'react'
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
           Term Report
         </p>
         <p className="co-op-info">
-          Fall Term: October 6 – December 27, 2025 | VK Cloud Solutions Private
+          Fall Term: October 6 – December 26, 2025 | VK Cloud Solutions Private
           Limited
         </p>
         <p className="built-with">
